@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black&Brown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <header class="header">
+
+        <div class="menu container">
+            <a href="#" class="logo">B&B</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="Imagenes/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>                
+        </div>
+
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Black & Brown</h1>
+                <p>
+                    La vida está hecha de momentos, uno de ellos es la preparación de una taza de café 
+                    que para muchos representa un espacio mágico desde que abrimos la bolsa o el recipiente donde tenemos nuestro grano listo para moler y continuamos 
+                    paso a paso la preparación hasta terminar degustando un rico y aromático producto de nuestra tierra.
+                    Esta misma inspiración y dedicación se refleja en nuestra labor diaria con todo el equipo de Black & Brown, 
+                    buscamos compartir con nuestros clientes y amigos la importancia de toda la cadena que se encuentra 
+                    atrás de la entrega de una bolsa de café en tu casa u oficina.
+                </p>                  
+                <a href="#" class="btn-1">informacion</a>
+            </div>
+            <div class="header-img">
+                <img src="Imagenes/Siphon.jpg"alt="">
+            </div>
+        </div>
+
+    </header>
+    <section class="about container">
+
+        <div class="about-img">
+            <img src="Imagenes/imag.jpg" alt="">
+        </div>
+        <div class="about-txt">
+            <h2>Nosotros</h2>
+            <p>Desde la concepción de Sirius Coffee quedó asentado que parte de los beneficios de toda la comunicación, 
+                educación, promoción y venta de los productos en nuestra tienda en línea debían tener un componente de 
+                beneficio social para las comunidades origen del café que promovemos y del cual estamos completamente 
+                satisfechos por su calidad y sabor.
+                El primer artículo de este blog no podía ser otro que el de invitar a toda esta comunidad de gustosos 
+                por el café a sumarse a la iniciativa de llevar educación y tecnología a las comunidades de los estados 
+                de Oaxaca, Chiapas, Veracruz, entre otros estados donde buscamos las fincas que tengan las condiciones 
+                para implementar los apoyos que buscamos.
+                Somos muy respetuosos de las costumbres, políticas y entorno de las comunidades; donde nos abren las 
+                puertas para actuar lo hacemos, donde las condiciones nos impiden llevar ayuda, nos mantenemos al margen.
+                Dar para recibir, recibir para dar.
+                Creemos que todo lo material que nos rodea es prestado y lo único que permanece es la energía de las buenas acciones.
+                ¡Bienvenidos a la comunidad Black & Brown!
+            </p>
+        </div>
+
+    </section>
+
+        <main class="servicios">
+            
+            <h2>Variedades</h2>
+            <div class="servicios-content container">
+
+                <div class="servicio-1">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h3>Chiapas</h3>
+                </div>
+
+                <div class="servicio-1">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <h3>Veracruz</h3>
+                </div>
+
+                <div class="servicio-1">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h3>Oaxaca</h3>
+                </div>
+
+                <div class="servicio-1">
+                    <i class="fa-solid fa-mug-hot"></i>
+                    <h3>Espresso</h3>
+                </div>
+
+            </div>
+        </main>
+
+        <section class="formulario container">
+
+            <form method="post" autocomplete="off">
+
+                <h2> Informes</h2>
+                <div class="input-group">
+
+                    <div class="input-container">
+                        <input type="text" name="name" placeholder="Nombre y Apellido">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="tel" name="phone" placeholder="Telefono Celular">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+
+                    <div class="input-container">
+                        <input type="email" name="email" placeholder="Correo">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div class="input-conteiner">
+                        <textarea name="message" placeholder="Detalles"></textarea>
+                    </div>
+
+                    <input type="submit" name="send" class="btn" onclick="myfunction()">
+
+                </div>
+
+            </form>
+
+        </section>
+        
+        
+        
+        <footer>
+
+            <div class="footer-content container">
+
+                <div class="link">
+                    <a href="#" class="logo">B&B</a>
+                </div>
+
+                <div class="link">
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+
+
+                </div>
+
+
+
+            </div>
+
+        </footer>
+
+        <?php
+            include("send.php");
+        ?>
+
+        <script>
+            function myFunction(){
+                window.location.href="http://localhost/pagina"
+            }
+        </script>
+
+</body>
+</html>
